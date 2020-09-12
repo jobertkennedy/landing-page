@@ -23,12 +23,12 @@
             <div>Instagram</div>
         </div>
     </div>
-    <footer> &copy; Landing Page. Developed by <a id="footer-link" href="https://github.com/jobertkennedy" target="_blank" rel="noopener noreferrer">Jôbert Kennedy</a></footer>
+    <footer><span id="footer-year"></span> &copy; Landing Page. Developed by &nbsp; <a id="footer-link" href="https://github.com/jobertkennedy" target="_blank" >Jôbert Kennedy</a></footer>
     <script>
-        const footerYear = document.querySelector('footer')
+        const footerYear = document.querySelector('#footer-year')
         let year = new Date()
         
-        footerYear.textContent = year.getFullYear() + footerYear.textContent
+        footerYear.innerHTML = year.getFullYear()
     </script>
 </body>
 </html>
