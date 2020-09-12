@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url('../src/background.jpg');
+    background-color: rgba(0, 0, 0, 0.486);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgba(117, 117, 117, 0.63);
+
+    color: White;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body h1 {
+    margin: 0;
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.192);
+    padding: 25px;
+
+    border-radius: 10px 8px 0 0;
+
+    transition: box-shadow .5s ease-out;
+    transition: transform .1s;
+}
+
+body h1:hover {
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.281);
+    transition: box-shadow .5s ease-in;
+    transition: transform .1s;
+    transform: translateY(-5px);
+
+}
+
+body p {
+    font-size: 24px;
+    text-align: justify;
+
+    width: 100%;
+    max-width: 850px;
+}
+
+#btn-links {
+    width: 100%;
+    max-width: 850px;
+
+    display: flex;
+    justify-content: center;
+}
+
+#link-btn {
+    width: 100px;
+    height: 100px;
+    
+    border-radius: 8px;
+    margin: 10px auto 0;
+
+    filter: grayscale(100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: filter .4s;
+    transition: box-shadow .1s;
+}
+
+#link-btn:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.301);
+    filter: grayscale(0%);
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.253);
+
+    transition: filter .2s;
+    transform: translateY(-5px);
+    transition: box-shadow .2s;
+}
+
+#link-btn img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    
+
+    margin-bottom: 10px;
+}
+
+footer {
+    font-size: 20px;
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.253);
+
+    position: fixed;
+    bottom: 0px;
+}
+
+#footer-link {
+    text-decoration: none;
+    color: rgb(161, 96, 53);
+    font-weight: 600;
+}
+
+
+
