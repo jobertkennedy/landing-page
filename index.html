@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <h1>Landing Page</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, magnam iusto. Nisi nobis, sunt sit eveniet, delectus aliquam blanditiis suscipit ratione harum dolore, accusamus nostrum veritatis esse? Magni, doloribus reiciendis.</p>
+    <div id="btn-links">
+        <div id="link-btn">
+            <img src="./src/facebook.png" alt="Facebook">
+            <div>Facebook</div>
+        </div>
+        <div id="link-btn">
+            <img src="./src/twitter.png" alt="Twitter">
+            <div>Twitter</div>
+        </div>
+        <div id="link-btn">
+            <img src="./src/instagram-sketched.png" alt="Instagram">
+            <div>Instagram</div>
+        </div>
+    </div>
+    <footer> &copy; Landing Page. Developed by <a id="footer-link" href="https://github.com/jobertkennedy" target="_blank" rel="noopener noreferrer">Jôbert Kennedy</a></footer>
+    <script>
+        const footerYear = document.querySelector('footer')
+        let year = new Date()
+        
+        footerYear.textContent = year.getFullYear() + footerYear.textContent
+    </script>
+</body>
+</html>
